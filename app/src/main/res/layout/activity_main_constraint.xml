@@ -18,36 +18,35 @@
 
     <TextView
         android:id="@+id/tv_name"
+        style="@style/Text.Body"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:padding="8dp"
         android:text="@string/text_placeholder_name"
         android:textAlignment="center"
-        android:textSize="18sp"
-        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/iv_profile" />
 
     <TextView
         android:id="@+id/tv_age"
+        style="@style/Text.Subtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:padding="8dp"
         android:text="@string/text_placeholder_age"
         android:textAlignment="center"
-        android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/tv_name" />
 
     <TextView
         android:id="@+id/tv_job"
+        style="@style/Text.Subtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:padding="8dp"
         android:text="@string/text_placeholder_job"
         android:textAlignment="center"
-        android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/tv_age" />
 
     <FrameLayout
@@ -57,10 +56,11 @@
         app:layout_constraintEnd_toStartOf="@+id/fl_button_right"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_job">
+
         <ImageView
-            android:src="@drawable/ic_decline"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_decline" />
     </FrameLayout>
 
     <FrameLayout
@@ -70,10 +70,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/fl_button_left"
         app:layout_constraintTop_toBottomOf="@id/tv_job">
+
         <ImageView
-            android:src="@drawable/ic_okay"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_okay" />
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
