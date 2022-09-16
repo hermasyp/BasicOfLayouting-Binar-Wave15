@@ -3,4 +3,7 @@
     <string name="text_placeholder_name">Nama : Muhammad Hermas Yuda P</string>
     <string name="text_placeholder_age">Umur : 26 Tahun</string>
     <string name="text_placeholder_job">Pekerjaan : Kuli Ketik</string>
+    <string name="text_mood_is_not_good"> %d Your current mood is not good</string>
+    <string name="text_mood_is_good">%d \n Your current mood is Good !</string>
+    <string name="text_mood_is_neutral">%d \n Your current mood is Neutral</string>
 </resources>

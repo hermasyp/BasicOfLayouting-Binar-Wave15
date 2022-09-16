@@ -6,5 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/tv_your_mood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fl_reaction_neutral"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Oh Your mood is not to good by today" />
+
+    <FrameLayout
+        android:id="@+id/fl_reaction_sad"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/fl_reaction_neutral">
+
+        <ImageView
+            style="@style/Base.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_very_sad" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_reaction_neutral"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toRightOf="@id/fl_reaction_sad"
+        app:layout_constraintRight_toLeftOf="@id/fl_reaction_happy">
+
+        <ImageView
+            style="@style/Base.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_neutral" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_reaction_happy"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toRightOf="@id/fl_reaction_neutral"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            style="@style/Base.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_very_happy" />
+    </FrameLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
